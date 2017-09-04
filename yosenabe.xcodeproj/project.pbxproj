@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9A4BDE661F5AACFB00CD5678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BDE651F5AACFB00CD5678 /* AppDelegate.swift */; };
-		9A4BDE681F5AACFB00CD5678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BDE671F5AACFB00CD5678 /* ViewController.swift */; };
 		9A4BDE6B1F5AACFB00CD5678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BDE691F5AACFB00CD5678 /* Main.storyboard */; };
 		9A4BDE6D1F5AACFB00CD5678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BDE6C1F5AACFB00CD5678 /* Assets.xcassets */; };
 		9A4BDE701F5AACFB00CD5678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BDE6E1F5AACFB00CD5678 /* LaunchScreen.storyboard */; };
+		9A4BDE7A1F5AAF8D00CD5678 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BDE791F5AAF8D00CD5678 /* TeamsViewController.swift */; };
+		9ADEAEA31F5D24A700DD7FD2 /* TeamsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADEAEA21F5D24A700DD7FD2 /* TeamsTableView.swift */; };
+		9ADEAEA51F5D24D700DD7FD2 /* TeamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADEAEA41F5D24D700DD7FD2 /* TeamsTableViewCell.swift */; };
+		9ADEAEAD1F5D295B00DD7FD2 /* teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADEAEAC1F5D295B00DD7FD2 /* teams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A4BDE621F5AACFB00CD5678 /* yosenabe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yosenabe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BDE651F5AACFB00CD5678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A4BDE671F5AACFB00CD5678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A4BDE6A1F5AACFB00CD5678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A4BDE6C1F5AACFB00CD5678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A4BDE6F1F5AACFB00CD5678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A4BDE711F5AACFB00CD5678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4BDE791F5AAF8D00CD5678 /* TeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamsViewController.swift; path = view/teams/TeamsViewController.swift; sourceTree = "<group>"; };
+		9ADEAEA21F5D24A700DD7FD2 /* TeamsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamsTableView.swift; path = view/teams/TeamsTableView.swift; sourceTree = "<group>"; };
+		9ADEAEA41F5D24D700DD7FD2 /* TeamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamsTableViewCell.swift; path = view/teams/TeamsTableViewCell.swift; sourceTree = "<group>"; };
+		9ADEAEAC1F5D295B00DD7FD2 /* teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = teams.swift; path = models/teams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		9A4BDE641F5AACFB00CD5678 /* yosenabe */ = {
 			isa = PBXGroup;
 			children = (
+				9ADEAEA61F5D290A00DD7FD2 /* models */,
+				9A4BDE771F5AAF5900CD5678 /* view */,
 				9A4BDE651F5AACFB00CD5678 /* AppDelegate.swift */,
-				9A4BDE671F5AACFB00CD5678 /* ViewController.swift */,
 				9A4BDE691F5AACFB00CD5678 /* Main.storyboard */,
 				9A4BDE6C1F5AACFB00CD5678 /* Assets.xcassets */,
 				9A4BDE6E1F5AACFB00CD5678 /* LaunchScreen.storyboard */,
 				9A4BDE711F5AACFB00CD5678 /* Info.plist */,
 			);
 			path = yosenabe;
+			sourceTree = "<group>";
+		};
+		9A4BDE771F5AAF5900CD5678 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9A4BDE781F5AAF6800CD5678 /* teams */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		9A4BDE781F5AAF6800CD5678 /* teams */ = {
+			isa = PBXGroup;
+			children = (
+				9A4BDE791F5AAF8D00CD5678 /* TeamsViewController.swift */,
+				9ADEAEA21F5D24A700DD7FD2 /* TeamsTableView.swift */,
+				9ADEAEA41F5D24D700DD7FD2 /* TeamsTableViewCell.swift */,
+			);
+			name = teams;
+			sourceTree = "<group>";
+		};
+		9ADEAEA61F5D290A00DD7FD2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9ADEAEAC1F5D295B00DD7FD2 /* teams.swift */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4BDE681F5AACFB00CD5678 /* ViewController.swift in Sources */,
+				9ADEAEAD1F5D295B00DD7FD2 /* teams.swift in Sources */,
+				9ADEAEA51F5D24D700DD7FD2 /* TeamsTableViewCell.swift in Sources */,
+				9ADEAEA31F5D24A700DD7FD2 /* TeamsTableView.swift in Sources */,
 				9A4BDE661F5AACFB00CD5678 /* AppDelegate.swift in Sources */,
+				9A4BDE7A1F5AAF8D00CD5678 /* TeamsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +338,7 @@
 				9A4BDE761F5AACFB00CD5678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
