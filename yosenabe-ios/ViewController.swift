@@ -26,8 +26,9 @@ class ViewController: UIViewController {
     func pushView() {
         let storyboard: UIStoryboard = self.storyboard!
         let nextView = storyboard.instantiateViewController(withIdentifier: "second")
-        let navi = UINavigationController(rootViewController: nextView)
-        present(navi, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nextView, animated: true)
+        //let navi = UINavigationController(rootViewController: nextView)
+        //present(navi, animated: true, completion: nil)
     }
 
 
